@@ -170,7 +170,7 @@ a.slider-button {
 .footer{
   text-align: center;
   border-top: 1px solid #e6e6e6;
-  padding: 30px 0 44px;
+  padding: 30px 0 ;
   margin-top: 50px;
 }
 .footer span{
@@ -183,5 +183,119 @@ a.slider-button {
 .footer span>a{
   text-decoration: none;
   color: #909090;
+
+}
+@media screen and (max-width:768px) {
+  .navbar-default .navbar-toggle {
+    border-color: #5094f2;
+    background-color: #5094f2;
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+      background-color: white;
+  }
+  .header {
+      padding: 27px;
+  }
+  .my-blocks {
+      padding: 0;
+  }
+  .my-block {
+    display: block;
+    width: 100%;
+    text-align: initial;
+    border-bottom: 1px solid #cccccc;
+    padding: 39px 0 18px 45px;
+    overflow: hidden;
+  }
+  .my-block img{
+    float: left;
+    max-width: 136px;
+    max-height: 136px;
+    margin-right: 25px;
+  }
+  .my-block span {
+      color: #5094f2;
+      font-family: "Segoe";
+      font-size: 34px;
+      line-height: 52px;
+  }
+  .my-block p{
+    color: #909090;
+    font-size: 19px;
+  }
+  .cart{
+    padding: 50px;
+  }
+  .cart-l,
+  .cart-r {
+      width: 100%;
+      margin-right: 0;
+      margin-left: 0;
+  }
+  .cart-l img{
+    margin-top: 35px;
+    max-width: 215px;
+  }
+  .cart-r h3{
+    font-size: 34px;
+
+  line-height: 44px;
+  }
+  .cart-r p{
+    font-size: 17px;
+
+  line-height: 36px;
+  }
+  .navbar-nav {
+      float: none;
+      text-align: center;
+  }
+  .navbar-toggle {
+      position: relative;
+      float: right;
+      padding: 9px 10px;
+  }
+  .navbar-toggle .icon-bar {
+      width: 36px;
+      height: 5px;
+  }
+  .swiper-button-prev,
+  .swiper-button-next{
+    display: none;
+  }
+  .swiper-slide img {
+      margin: 22px 66px 0 37px;
+      max-width: 223px;
+      width: auto;
+  }
+  .swiper-container::after{
+    display: none;
+  }
+  .swiper-slide {
+      background-size: cover;
+  }
+  .slider-content h2 {
+      font-size: 31px;
+  }
+.slider-content span{
+  font-size: 23px;
+}
+.slider-content{
+  padding-top: 28px;
+  padding-right: 74px;
+}
+a.slider-button {
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+    font-size: 31px;
+    padding: 8px 8px 8px 45px;
+    background-color: #5094f2;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background-position: 11px 50%;
+    margin-left: 0;
+}
+
 
 }
