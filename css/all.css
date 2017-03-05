@@ -1,0 +1,96 @@
+@font-face {
+font-family: 'Segoe WPN';
+font-style: normal;
+font-weight: normal;
+src: local('Segoe WPN'), url('SegoeWPN.woff') format('woff');
+}
+@font-face {
+font-family: 'Segoe';
+font-style: normal;
+font-weight: normal;
+src: local('Segoe'), url('SegoeUIRegular.woff') format('woff');
+}
+
+.header{
+  padding: 24px 152px 0 141px;
+}
+.navbar-default{
+  background-color: white;
+  border-color: white;
+  margin-bottom: 0;
+}
+ul.navbar-nav li a{
+  color: #6c6c6c;
+  font-family: "Segoe WPN";
+  font-size: 16px;
+  font-weight: 400;
+}
+.navbar-nav{
+  float: right;
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>li>a:hover{
+  color: #6c6c6c;
+  background-color: white;
+  border-bottom: 3px solid #5094f2;
+}
+.content{
+  padding: 0;
+  margin: 0;
+}
+.swiper-container{
+  /*height: 50%;*/
+  display: block;
+}
+.swiper-slide{
+  background-image: url(../img/swiper-fon.png);
+}
+.swiper-slide img{
+  margin: 2% 10% 0 14%;
+  float: left;
+}
+
+.content-wrapper>div img{
+  padding-top: 38px;
+  margin-right: 104px;
+}
+
+.slider-content{
+  color: white;
+  padding-top: 10%;
+}
+
+.slider-content h2{
+  font-size: 42px;
+
+}
+
+.slider-content span{
+  display: inline-block;
+  font-size:  26px;
+  margin-bottom: 42px;
+}
+a.slider-button {
+  text-decoration: none;
+  color:white;
+  font-weight: 100;
+  font-size:  22px;
+  padding: 8px 8px 8px 45px;
+  background-color: #5094f2;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  background-image: url("../img/btn-swiper.png");
+  background-repeat: no-repeat;
+  background-position: 11px 50%;
+  margin-left: 20px;
+}
+.swiper-button-next{
+  background-image: url(../img/swp-r.png);
+  right: 3%;
+}
+.swiper-button-prev{
+  background-image: url(../img/swp-l.png);
+  left: 3%;
+}
