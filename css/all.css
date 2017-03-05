@@ -43,6 +43,7 @@ ul.navbar-nav li a{
 .swiper-container{
   /*height: 50%;*/
   display: block;
+
 }
 .swiper-slide{
   background-image: url(../img/swiper-fon.png);
@@ -93,4 +94,94 @@ a.slider-button {
 .swiper-button-prev{
   background-image: url(../img/swp-l.png);
   left: 3%;
+}
+.swiper-container::after {
+    content: '';
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 11px;
+    background-image: url(../img/bgr-ramka.png);
+    background-repeat: repeat-x;
+    bottom: -1px;
+    z-index: 1000;
+}
+.my-blocks{
+  padding: 73px 135px;
+
+}
+.my-block{
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+}
+.my-block span{
+  color: #5094f2;
+  font-family: "Segoe";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 44px;
+}
+.my-block span p{
+  color: #909090;
+  font-family: "Segoe";
+  font-size: 14px;
+  font-weight: 400;
+}
+.cart{
+  padding: 0 150px;
+  overflow: hidden;
+
+}
+.cart-l{
+  float: left;
+  width: 45%;
+  text-align: center;
+  margin-right: 41px;
+}
+.cart-l h1{
+  color: #6f7173;
+  font-family: "Segoe WPN";
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 44px;
+}
+
+.cart-r{
+  width: 45%;
+  float: left;
+  margin-left: 41px;
+  padding-top: 30px;
+}
+.cart-r h3{
+  color: #6f7173;
+  font-family: "Segoe WPN";
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 44px;
+}
+.cart-r p{
+  color: #909090;
+  font-family: "Segoe WPN";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 36px;
+}
+.footer{
+  text-align: center;
+  border-top: 1px solid #e6e6e6;
+  padding: 30px 0 44px;
+  margin-top: 50px;
+}
+.footer span{
+  color: #909090;
+  font-family: "Segoe WPN";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 36px;
+}
+.footer span>a{
+  text-decoration: none;
+  color: #909090;
+
 }
