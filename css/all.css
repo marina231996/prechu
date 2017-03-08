@@ -13,25 +13,37 @@ src: local('Segoe'), url('SegoeUIRegular.woff') format('woff');
 
 .header{
   padding: 24px 152px 0 141px;
+  overflow: hidden;
 }
-.navbar-default{
-  background-color: white;
-  border-color: white;
-  margin-bottom: 0;
+.logo{
+  float: left;
+}
+.navigation{
+  float: right;
+}
+.mobile-btn{
+  display: none;
+}
+ul.navbar-nav{
+  list-style: none;
+display: inline-block;
+overflow: hidden;
+margin: 0;
+}
+ul.navbar-nav li{
+  float: left;
+  padding: 15px;
 }
 ul.navbar-nav li a{
   color: #6c6c6c;
   font-family: "Segoe WPN";
   font-size: 16px;
   font-weight: 400;
+  text-decoration: none;
 }
-.navbar-nav{
-  float: right;
-}
-.navbar-default .navbar-nav>.active>a,
-.navbar-default .navbar-nav>.active>a:focus,
-.navbar-default .navbar-nav>.active>a:hover,
-.navbar-default .navbar-nav>li>a:hover{
+
+.navbar-nav>li.active,
+.navbar-nav>li:hover{
   color: #6c6c6c;
   background-color: white;
   border-bottom: 3px solid #5094f2;
@@ -43,9 +55,6 @@ ul.navbar-nav li a{
 .swiper-container{
   /*height: 50%;*/
   display: block;
-
-}
-.swiper-slide{
   background-image: url(../img/swiper-fon.png);
 }
 .swiper-slide img{
@@ -107,13 +116,48 @@ a.slider-button {
     z-index: 1000;
 }
 .my-blocks{
-  padding: 73px 135px;
+  padding: 73px 0;
 
 }
 .my-block{
   display: inline-block;
   width: 33%;
   text-align: center;
+}
+.main-blocks{
+max-width: 1000px;
+margin: 0 auto;
+}
+.my-block-pen,
+.my-block-monitor,
+.my-block-basket{
+  background-color: #5094f2;
+  width: 186px;
+  height: 186px;
+  margin: 0 auto;
+  border-radius: 50%;
+  vertical-align: middle;
+  /*padding-top: 10%;*/
+  overflow: hidden;
+position: relative;
+
+}
+.my-block-monitor{
+  background-color: #d94748;
+  /*padding-top: 15%;*/
+}
+.my-block-basket{
+  background-color: #ebbb11;
+  /*padding-top: 14%;*/
+}
+.my-block-pen img,
+.my-block-monitor img,
+.my-block-basket img{
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    height: auto;
+    transform: translate(-50%, -50%);
 }
 .my-block span{
   color: #5094f2;
@@ -129,7 +173,6 @@ a.slider-button {
   font-weight: 400;
 }
 .cart{
-  padding: 0 150px;
   overflow: hidden;
 
 }
@@ -186,13 +229,10 @@ a.slider-button {
 
 }
 @media screen and (max-width:768px) {
-  .navbar-default .navbar-toggle {
-    border-color: #5094f2;
-    background-color: #5094f2;
+  .mobile-btn{
+    display: block;
   }
-  .navbar-default .navbar-toggle .icon-bar {
-      background-color: white;
-  }
+
   .header {
       padding: 27px;
   }
@@ -207,11 +247,19 @@ a.slider-button {
     padding: 39px 0 18px 45px;
     overflow: hidden;
   }
-  .my-block img{
+  .my-block-pen,
+  .my-block-monitor,
+  .my-block-basket{
     float: left;
     max-width: 136px;
     max-height: 136px;
     margin-right: 25px;
+  }
+  .my-block-pen img,
+  .my-block-monitor img,
+  .my-block-basket img{
+    max-width: 80px;
+    max-height: 80px;
   }
   .my-block span {
       color: #5094f2;
@@ -246,19 +294,20 @@ a.slider-button {
 
   line-height: 36px;
   }
-  .navbar-nav {
+  ul.navbar-nav {
       float: none;
       text-align: center;
+      display: none;
+      position: absolute;
+      left: 0;
+    width: 100%;
+    padding: 0;
   }
-  .navbar-toggle {
-      position: relative;
-      float: right;
-      padding: 9px 10px;
-  }
-  .navbar-toggle .icon-bar {
-      width: 36px;
-      height: 5px;
-  }
+ul.navbar-nav li{
+  float: none;
+  width: 100%;
+
+}
   .swiper-button-prev,
   .swiper-button-next{
     display: none;
@@ -296,6 +345,9 @@ a.slider-button {
     background-position: 11px 50%;
     margin-left: 0;
 }
-
+.header{
+  position: relative;
+  /*height: 220px;*/
+}
 
 }
